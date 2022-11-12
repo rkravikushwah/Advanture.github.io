@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 class="logo"><span class="tilt">A</span>dvanture</h1>
+        <ul class="navlink">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-cont">
+            <h2>Explore this beautiful World</h2>
+            <div class="line"></div>
+            <h1>A Wonderful gift by this Nature</h1>
+            <a href="" class="atn">Know more</a>
+        </div>
+    </header>
+    <!-- section Events -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/img2.png" alt="">
+                <h4>Holiday Camp</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ad voluptatibus libero? In animi
+                    delectus vel quae sint, esse ratione.</p>
+                <a href="#" class="atn">Learn More</a>
+            </div>
+
+            <div class="col">
+                <img src="img/img1.png" alt="">
+                <h4>Everest Camp</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ad voluptatibus libero? In animi
+                    delectus vel quae sint, esse ratione.</p>
+                <a href="#" class="atn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- section Explore -->
+    <section class="explore">
+        <div class="explore-cont">
+            <h1>Explore the World</h1>
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aspernatur deleniti aperiam totam, aut
+                modi!
+                Repellendus, tempore dolor.</p>
+            <a href="#" class="atn">Learn More</a>
+        </div>
+    </section>
+    <!-- section Tour -->
+    <section class="tour">
+        <div class="row">
+            <div class="col-cont">
+                <h1>Our Tours</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam atque impedit quis consequuntur
+                    reiciendis, illum numquam nesciunt, explicabo cupiditate, doloribus magnam? Magnam quam earum autem
+                    nostrum harum vel, reprehenderit quia.</p>
+                <a href="#" class="atn">Learn More</a>
+            </div>
+            <div class="col-img">
+                <div class="img-gallery">
+                    <img src="img/img3.png" alt="">
+                    <img src="img/img4.png" alt="">
+                    <img src="img/img5.png" alt="">
+                    <img src="img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <p>xyz city,New Zealand | Mobile: 8532154664 | Email: abc@gmail.com</p>
+        <p>Coptright 2022 Advanture destinations</p>
+    </section>
+    <script>
+        const menubtn = document.querySelector('.menu-btn')
+        const navlink = document.querySelector('.navlink')
+        menubtn.addEventListener('click', () => {
+            navlink.classList.toggle('mobilemenu')
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{overflow-x: hidden;}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/header-bg.png");
+    background-position: top;
+    background-size: cover;
+}
+.atn {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, rgb(7, 128, 7), rgb(199, 199, 25));
+    box-shadow: 2px 3px 4px black;
+    
+}
+.atn:hover{ background-image: linear-gradient(to top, rgb(7, 128, 7), rgb(199, 199, 25));}
+.tilt {
+    color: crimson;
+   
+}
+.logo{ font-size: 30px;
+    border-bottom: 3px solid crimson;
+    margin-left: 20px;user-select: none;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-cont {
+    text-align: center;
+    color: whitesmoke;
+}
+.header-cont h2 {
+    font-size: 4vmin;user-select: none;
+}
+.header-cont h1 {
+    font-size: 6vmin;
+    margin: 30px 0 30px 0;user-select: none;
+}
+.line {
+    height: 4px;
+    width: 250px;
+    background: linear-gradient(to right, rgb(7, 128, 7), rgb(199, 199, 25));
+    margin: 10px auto;
+    border-radius: 3px;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+li a:hover {
+   
+    background-color: rgb(62, 62, 92);
+    color: rgb(28, 241, 28);
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
+    color: whitesmoke; padding: 10px 25px;
+    font-size: 20px;
+}
+.navlink {
+    display: flex;
+    align-items: center;
+}
+.navlink li {
+    margin: 0 10px;
+}
+ul {
+    list-style: none;
+}
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    right: 30px;
+    width: 30px;
+    display: none;
+    align-items: center;
+}
+/* section start */
+section {
+    width: 85%;
+    margin: 50px auto;
+}
+.title {
+    font-size: 4vmin;
+    text-align: center;
+    color: rgb(109, 92, 92);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.col h4{
+    margin: 20px auto;
+    font-size: 3vmin;user-select: none;
+}
+p{ padding: 0 10px;user-select: none;}
+.col .atn{margin: 20px auto;}
+/* Explore */
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.explore-cont{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 60px;
+    color: whitesmoke;
+    align-items: center;
+
+}
+.explore-cont h1{
+    font-size: 7vmin;
+    user-select: none;
+}
+.explore-cont .atn{
+    margin-top: 20px;
+}
+.row .col img{transition: 0.4s ease-in-out;}
+.col img:hover{transform: scale(1.04);}
+.col-img img{transition: 0.4s ease-in-out;}
+.col-img img:hover{transform: scale(1.04);}
+/* Tour */
+.img-gallery{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    align-items: center;
+}
+.col-cont{
+    width: 40%;
+    text-align: center;
+}
+.col-img{
+    width: 60%;
+}
+.img-gallery img{
+    width: 250px;
+    margin: 5px;
+}
+.col-cont p{margin: 20px auto;user-select: none; }
+.col-cont h1{font-size: 7vmin;user-select: none;}
+/* footer */
+.footer{
+    min-height: 100px;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    padding: 20px 80px;
+    text-align: center;  
+}
+.footer p{
+    margin: 20px auto;user-select: none;
+}
+/* for small device */
+@media only screen and (max-width:850px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .navlink {
+        flex-direction: column;
+        width: 40%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(79, 61, 129);
+        margin-top: -1000px;
+        transition: all 0.3s ease-in-out;
+    }
+    .mobilemenu {
+        margin-top: 0;
+    }
+    .navlink li {
+        margin: 20px auto;
+    }
+    .header-cont {
+        margin-bottom:-250px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .row {flex-direction: column;}
+    .col img {max-width: 90%;}
+    .explore-cont{width: 100%;}
+    .tour .col-cont{width: 100%;}
+    .img-gallery{justify-content: center;margin-top: 30px;}
+    
+}
